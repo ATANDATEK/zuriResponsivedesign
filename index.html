@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-image: url(images/1655220205913.png);
+        }
+        
+        .main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            background-color: hsl(0, 100%, 74%);
+            background-image: url(images/1655220205905.png);
+        }
+        
+        .info {
+            margin: 50px 150px;
+            padding: 100px 10px;
+        }
+        
+        h1 {
+            text-transform: capitalize;
+            font-size: 2em;
+        }
+        
+        .shorttxt {
+            font-size: 12px;
+        }
+        
+        .box {
+            color: hsl(255, 17%, 95%);
+        }
+        
+        .try {
+            background-color: hsl(248, 32%, 49%);
+            text-align: center;
+            margin-top: 2px;
+            padding-top: 15px;
+            box-shadow: 3px 2px 5px 0px hsl(249, 10%, 26%);
+            font-size: 0.8rem;
+            width: 420px;
+            text-align: center;
+            height: 40px;
+            border-radius: 10px;
+        }
+        
+        .claim {
+            margin-top: 10px;
+            width: 325px;
+            height: 40px;
+            font-size: 0.8rem;
+            text-align: center;
+            background-color: hsl(154, 59%, 51%);
+            color: hsl(255, 17%, 95%);
+            text-transform: uppercase;
+            border-radius: 5px;
+            border-style: outset;
+            border-color: hsl(154, 59%, 51%);
+        }
+        
+        .details {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 60px 5px;
+        }
+        
+        form {
+            background-color: rgb(245, 248, 250);
+            padding: 20px 40px;
+            border-radius: 5px;
+        }
+        
+        input {
+            width: 320px;
+            height: 30px;
+            font-size: 12px;
+            font-weight: 700;
+            border-radius: 5px;
+            padding: 5px;
+            border-style: groove;
+            border-color: rgb(255, 255, 255);
+        }
+        
+        .click {
+            font-size: 10px;
+            color: rgb(194, 190, 190);
+            text-align: center;
+        }
+        
+        a {
+            color: red;
+            text-transform: capitalize;
+            text-decoration: none;
+        }
+        
+        @media screen and (max-width:700px) {
+            .main {
+                display: grid;
+                grid-template-columns: 1fr;
+            }
+            .info {
+                padding: 12px;
+                margin: 0px 80px;
+                margin-top: 35px;
+            }
+            h1 {
+                font-size: 23px;
+                text-transform: initial;
+                text-align: center;
+            }
+            .shorttxt {
+                font-size: 13px;
+                text-align: center;
+                line-height: 18px;
+            }
+            .try {
+                font-size: 0.7rem;
+                width: 150px;
+                line-height: 15px;
+                padding: 10px 80px;
+            }
+            .claim {
+                font-size: 0.5em;
+                width: 220px;
+                letter-spacing: 1px;
+                margin-top: -10px;
+            }
+            input {
+                width: 220px;
+                height: 20px;
+                font-size: 10px;
+            }
+            .click {
+                font-size: 8px;
+                color: rgb(180, 174, 174);
+                text-align: center;
+                width: 160px;
+                margin-left: 25px;
+                line-height: 13px;
+            }
+            .details {
+                align-items: center;
+                margin-top: -35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="info box">
+            <h1>Learn to code by watching others</h1>
+            <p class="shorttxt">
+                see how experienced developers solve problems in realtime. watching scripted tutorials is great, but understanding how developers think is invaluable.
+            </p>
+        </div>
+        <div class="details box">
+            <p class="try"><strong>Try it free 7days</strong> then $20/mo, thereafter</p>
+            <form onsubmit="return false;" action="#">
+
+
+                <input type="text" name="firstName" size="15" maxlength="30" placeholder="First Name" required/>
+                </p>
+                <p>
+
+                    <input type="text" name="firstName" size="15" maxlength="30" placeholder="Last Name" required/>
+                </p>
+
+                <p>
+                    <input type="email" name="Email" size="15" maxlength="50" placeholder="Email Address" required/>
+
+                </p>
+                <p>
+                    <input type="password" name="password" size="15" maxlength="50" placeholder="password" required/>
+
+                </p>
+
+
+                <button class="claim">claim your free trial</button>
+                <p class="click">By clicking the button you are agreeing to our <span><a href="">terms and services</a></span></p>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
